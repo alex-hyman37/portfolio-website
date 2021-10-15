@@ -6,19 +6,33 @@ particlesJS.load('particles-js', 'js/particles.json', function(){
 let frontTitle = document.querySelector(".front-title");
 let moreInfo = document.querySelector(".more-info");
 let card = document.querySelector(".card");
+let projects = document.querySelector(".projects");
 
-  card.addEventListener('mouseover', (event) => {
-    setTimeout(() => {
-      frontTitle.style.display = 'none';
-      moreInfo.style.display = 'block';
-    }, 200);
-    
+
+  projects.addEventListener('mouseover', (event) => {
+    if(event.target.className === 'card') {
+      setTimeout(() => {
+        frontTitle.style.display = 'none';
+        moreInfo.style.display = 'block';
+      }, 200);
+
+      if(event.target.className !== 'card') {
+        setTimeout(() => {
+          frontTitle.style.display = 'block';
+          moreInfo.style.display = 'none';
+        }, 200);
+      }
+    } else {
+      return;
+    }
   });
   
-  card.addEventListener('mouseout', (event) => {
-    setTimeout(() => {
-      frontTitle.style.display = 'block';
-      moreInfo.style.display = 'none';
-    }, 200);
+  // card.addEventListener('mouseout', (event) => {
+  //   if(event.target.matches('.card'))
+  //   setTimeout(() => {
+  //     frontTitle.style.display = 'block';
+  //     moreInfo.style.display = 'none';
+  //   }, 200);
     
-  });
+  // });
+

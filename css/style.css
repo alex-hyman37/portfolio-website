@@ -221,7 +221,7 @@ body {
 }
 
  .card{
-  /* position: absolute; */
+  position: absolute;
   height: 120px;
   width: 180px;
   background-repeat: no-repeat;
@@ -231,10 +231,9 @@ body {
   transform-style: preserve-3d;
   transition: .5s 100ms ease;
   backface-visibility: hidden;
-  perspective: 1000px;
 }
 
-.card.is-flipped {
+.card:hover {
   transform: rotateY(180deg);
 }
 
@@ -254,14 +253,11 @@ body {
   background-image: url('../images/project-5.png');
 }
 
-.card:hover {
-  transform: scale(1.05, 1.05);
+.hover{
+  /* transform: scale(1.05, 1.05); */
+  transform: rotateY(180deg);
 }
 
-.card-container-title {
-  margin: 0;
-  padding: 0;
-}
 
 /* Front */
 .front {

@@ -3,27 +3,28 @@ particlesJS.load('particles-js', 'js/particles.json', function(){
 });
 
 
-// // Hover card
-// let cards = document.querySelectorAll(".card");
-// let projects = document.querySelector(".projects");
+//Hover card
+let cards = document.querySelectorAll(".card");
 
-// cards.forEach(card => {
+cards.forEach(card => {
+  let moreInfo = card.querySelector(".more-info");
 
-//   let frontTitle = card.querySelector(".front-title");
-//   let moreInfo = card.querySelector(".more-info");
+  card.addEventListener('click', (event) => {
+    if(event.target.classList == "more-info") {
+      card.classList.remove('is-flipped');
+      card.classList.add('is-flipped');
+    }
+  });
   
-//   card.addEventListener('mouseover', (event) => {
-//       card.classList.toggle('hover');
-//   });
+});
 
-//   card.addEventListener('mouseout', (event) => {
-//       card.classList.toggle('hover');
-//   });
 
+
+
+
+// let moreInfo = document.querySelector(".more-info");
+// let card = document.querySelector(".card");
+
+// moreInfo.addEventListener('click', (e) => {
+//   card.classList.toggle('is-flipped');
 // });
-
-// Flip card
-
-
-
-

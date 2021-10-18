@@ -9,19 +9,20 @@
 
   <script src="https://kit.fontawesome.com/c2fda04dd4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
 
-
-  <nav class="nav">
+  <div id="top"></div>
+  <nav class="nav" id="nav">
     <div class="nav-right">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#triangle">Projects</a></li>
+        <li><a href="#footer">Contact</a></li>
         <li><a target="_blank" href="Resume.pdf">Resume</a></li>
       </ul>
     </div>
@@ -45,18 +46,19 @@
               <p>Front-end Web Developer</p>
             </div>
             <div class="bio">
-              <p><strong>Hi,I'm Alex!</strong> I'm a front-end web developer with a passion for art, design, and music.  Let's build something cool!</p>
+              <p><strong>Hi,I'm Alex!</strong> I'm a front-end web developer with a passion for art, design, and music.
+                Let's build something together!</p>
             </div>
           </div>
-          <div class="arrow"></div>
+          <a href="#triangle" class="arrow"></a>
         </div>
-       
-        
+
+
       </section>
 
-      <section class="projects">
+      <section class="projects" id="top">
         <div class="container">
-          <div class="triangle-projects"></div>
+          <div class="triangle-projects" id="triangle"></div>
         </div>
         <div class="container-card">
           <div class="card card1">
@@ -67,10 +69,10 @@
             <div class="back">
               <h2 class="back-title">Details</h2>
               <ul>
-                <li><span>Use of Fetch API</span></li>
-                <li><span>Lorem ipsum dolor sit.</span></li>
-                <li><span>Lorem ipsum dolor sit.</span></li>
-                <li><span>Lorem ipsum dolor sit.</span></li>
+                <li>Use of Fetch API</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
               </ul>
             </div>
           </div>
@@ -119,46 +121,54 @@
               </ul>
             </div>
           </div>
-          
-          <!-- <div class="card">
-            <div class="content">
-              <div class="center">
-                Project 2
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="content">
-              <div class="center">
-                Project 3
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="content">
-              <div class="center">
-                Project 4
-              </div>
-            </div>
-          </div> -->
         </div>
+
+
+
+        <div class="logo"><a href="#top">
+          <svg id="svg2" xml:space="preserve" width="180" height="180" viewBox="0 0 6400 6400"
+            sodipodi:docname="alex-hyman-logo-original.eps">
+            <defs id="defs6" />
+            <g id="g10" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX"
+              transform="matrix(1.3333333,0,0,-1.3333333,0,6400)">
+              <g id="g12" transform="scale(0.1)">
+                <path d="M 48000,0 H 0 V 48000 H 48000 V 0" style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                  id="path14" />
+                <path
+                  d="M 24009,35664.9 36623.3,12330.2 h -2623.5 l -4721.9,8732.8 -1097.6,2031.4 -5484.8,10144.3 1313.5,2426.2"
+                  style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path16" />
+                <path
+                  d="m 16012.6,16039.8 4718.4,8718.9 2464.2,-4554.5 z m 13136.1,7616.7 -968.4,-562.1 -2987.1,-1731.3 -4462.2,8245.6 -9351.4,-17278.5 h 2835.9 l 8695.8,5041.6 1382.7,802.2 1998,1157.7 758.3,439.7 2227.6,1291.6 1028.4,596.7 z m -1983,-5940.7 -1996.8,-1157.7 2287.7,-4227.9 h 2624.7 l -2915.6,5385.6"
+                  style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path18" />
+              </g>
+            </g>
+          </svg>
+        </a>
+        </div>
+
       </section>
     </div>
   </div>
-<section class="footer">
-  <div class="footer-flex">
-    <div class="contact">
-      <a href="mailto:alex.alexhyman@gmail.com" title="Email me" rel="me" target="_blank">alex.alexhyman@gmail.com</a>
+
+  
+  <section class="footer" id="footer">
+    <div class="logo-section"></div>
+    <div class="footer-flex">
+      <div class="contact">
+        <a href="mailto:alex.alexhyman@gmail.com" title="Email me" rel="me" target="_blank">alex.alexhyman@gmail.com</a>
+      </div>
+      <ul class="links">
+        <li><a href="https://github.com/alex-hyman37"><i class="fab fa-github-alt" target="_blank"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/alex-hyman-2529a7138/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.facebook.com/alex.hyman.184/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/alex_hyman37/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <h4 class="copyright">&copy 2021 Alex Hyman</h4>
+      <a href="#top" class="arrow-bottom"></a>
     </div>
-    <!-- <ul class="links">
-      <li><a href="https://github.com/alex-hyman37"><i class="fab fa-github-alt" target="_blank"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/alex-hyman-2529a7138/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="https://www.facebook.com/alex.hyman.184/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://www.instagram.com/alex_hyman37/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    </ul> -->
-    <div class="arrow-bottom"></div>
-  </div>
-</section>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/app.js"></script>
